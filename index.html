@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      function displaySideMenu(){
+        const menuIcon = document.querySelector(".sidebar");
+        menuIcon.style.right = '0';
+      }
+      function hideSideMenu(){
+        const menuIcon = document.querySelector(".sidebar");
+        menuIcon.style.right = '-100vw';
+      }
+    </script>
+  </head>
+  <body>
+        <ul class="sidebar">
+          <li onclick="hideSideMenu()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="20px" width="20px" fill="#"><path d="M6.4,19L5,17.6L10.6,12L5,6.4L6.4,5L12,10.6L17.6,5L19,6.4L13.4,12L19,17.6L17.6,19L12,13.4L6.4,19Z"/></svg></li>
+          <li><a href="#index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      <nav>
+        <ul>
+          <li><h1>Welcome to My Website</h1></li>
+          <li><a href="#index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li onclick="displaySideMenu()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="30px" width="30px" fill="#"><path d="M3,18V16H21v2H3Zm0-5V11H21v2H3ZM3,8V6H21V8H3Z"/></svg></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="body-container">
+      <div class="hero-section">
+        <h3 style="color: white;">Website Layout Clone done by aadhilcbrenny@mulearn</h3>
+      </div>
+
+      <footer>
+        <div class="footer">
+          <p style="color: white;">&copy; 2026 Aadhil C Brenny. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+   
+  </body>
+  
+</html>
